@@ -1,0 +1,244 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+html,body{
+	background-color: #0d3e4e;
+	font-family: Arial;
+	font-size: 14px;
+}
+
+body{
+	background-image: url("../images/background.png");
+	background-position: top left;
+	width: 750px;
+	height: 500px;
+	overflow: hidden;
+}
+
+#radiomeuh_player{
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+}
+
+#container{
+	position: relative;
+}
+
+#button{
+	width: 78px;
+	height: 78px;
+	position: absolute;
+	background-image: url("../images/button.png");
+	left: 40px;
+	top: 122px;
+	display: block;
+	outline: none;
+}
+
+#button.play{
+	background-position: top;	
+}
+
+#button.pause{
+    background-position: bottom;
+}
+
+#picture{
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	background-color: #fff;
+	left: 183px;
+	top: 123px;
+	border: 1px solid #fff;
+}
+
+#title{
+	color: #fff;
+	position: absolute;
+	left: 275px;
+	top: 129px;
+	font-size: 16px;
+	width: 495px;
+	height: 21px;
+	overflow: hidden;
+}
+
+#author{
+	color: #69b2cb;
+	position: absolute;
+	left: 275px;
+	top: 155px;
+	font-size: 13px;
+}
+
+#album{
+	color: #69b2cb;
+	position: absolute;
+	left: 275px;
+	top: 179px;
+	font-size: 13px;
+}
+
+#previous_picture{
+	width: 38px;
+	height: 38px;
+	position: absolute;
+	background-color: #fff;
+	left: 46px;
+	top: 296px;
+}
+
+#previous_title{
+	color: #fff;
+	position: absolute;
+	left: 92px;
+	top: 300px;
+	font-size: 13px;
+	width: 294px;
+	height: 15px;
+	overflow: hidden;
+}
+
+#previous_data{
+	position: absolute;
+	left: 92px;
+	top: 317px;	
+	width: 294px;
+	height: 13px;
+	overflow: hidden;
+	color: #fff;
+	font-size: 11px;
+}
+
+#previous_author{
+	color: #69b2cb;
+	font-size: 11px;
+}
+
+#previous_album{
+	color: #69b2cb;
+	font-size: 11px;
+}
+
+#next_picture{
+	width: 38px;
+	height: 38px;
+	position: absolute;
+	background-color: #fff;
+	left: 46px;
+	top: 395px;
+}
+
+#next_title{
+	color: #fff;
+	position: absolute;
+	left: 92px;
+	top: 399px;
+	font-size: 13px;
+	width: 294px;
+	height: 15px;
+	overflow: hidden;
+}
+
+#next_data{
+	position: absolute;
+	left: 92px;
+	top: 416px;
+	width: 294px;
+	height: 13px;
+	overflow: hidden;
+	color: #fff;
+	font-size: 11px;
+}
+
+#next_author{
+	color: #69b2cb;
+	font-size: 11px;
+}
+
+#next_album{
+	color: #69b2cb;
+	font-size: 11px;
+}
+
+#previous_tiret,#next_tiret{
+	display: none;
+}
+
+#volume_container{
+	width: 16px;
+	height: 34px;
+	position: relative;
+	left: 152px;
+	top: 152px;
+}
+
+#volume{
+	width: 16px;
+	height: 33px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#volume a{
+	width: 16px;
+	height: 15px;
+	display: block;
+	background-image: url("../images/volume.png");
+	position: absolute;
+	outline: none;
+	border: 0px;
+}
+
+#infos{
+	width: 30px;
+	height: 30px;
+	top: 40px;
+	right: 40px;
+	position: absolute;
+}
+
+#container2{
+	position: relative;
+	display: none;
+}
+
+#content{
+	background-color: #0d3e4e;
+	position: absolute;
+	top: 110px;
+	left: 0px;
+	width: 366px;
+	height: 380px;
+	padding-left: 38px;
+}
+
+#infos_close{
+	width: 30px;
+	height: 30px;
+	top: 40px;
+	right: 40px;
+	position: absolute;
+}
+
+.text{
+	background-color: #062530;
+	padding: 14px;
+	color: #fff;
+	font-size: 13px;
+}
+
+.text a{
+	color: #69b2cb;
+	cursor: pointer;
+}

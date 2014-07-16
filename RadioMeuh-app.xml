@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<application xmlns="http://ns.adobe.com/air/application/2.7"> 
+    <id>fr.woodgate.RadioMeuhAir</id> 
+    <versionNumber>1.0</versionNumber> 
+    <filename>RadioMeuh Air</filename> 
+    <initialWindow> 
+        <content>RadioMeuh.html</content> 
+        <visible>true</visible> 
+        <width>750</width> 
+        <height>500</height>
+        <resizable>false</resizable>
+        <minSize>750 500</minSize>
+        <maxSize>750 500</maxSize>
+        <maximizable>false</maximizable>
+    </initialWindow>
+    <icon> 
+        <image16x16>icons/16.png</image16x16> 
+        <image32x32>icons/32.png</image32x32> 
+        <image48x48>icons/48.png</image48x48> 
+        <image128x128>icons/128.png</image128x128>  
+    </icon>
+    <allowBrowserInvocation>true</allowBrowserInvocation>
+</application>
