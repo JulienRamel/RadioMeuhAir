@@ -9,7 +9,7 @@ play = function(){
     soundFactory = new air.Sound();
 
     soundFactory.load(request);
-    
+
     // Current volume
     var volume = $("#volume").slider("value");
 
@@ -17,7 +17,28 @@ play = function(){
     
     // We play the music at startup
     music = soundFactory.play(0, 0, transformation);
+
+    // I/O Error
+    soundFactory.removeEventListener(air.IOErrorEvent.IO_ERROR, ioerror);
+    soundFactory.addEventListener(air.IOErrorEvent.IO_ERROR, ioerror);
     
+};
+
+ioerror = function(){
+   
+   if($("#button").hasClass("pause") == true){
+   
+       // Music is stopped
+       music.stop();
+       
+       // An error message is displayed
+       $("#ioerror").show();
+       
+       // The play button is updated
+       $("#button").trigger("click");
+    
+   }
+
 };
 
 pause = function(){
@@ -180,7 +201,7 @@ $(document).ready(function(){
             pause();
             
             $(this).removeClass("pause");
-            $(this).addClass("play");                
+            $(this).addClass("play");
 
         }
         
@@ -238,9 +259,28 @@ $(document).ready(function(){
     
     // Play/Pause by keypress
     $(window).keyup(function(e){
+
         if(e.keyCode == 32){
-            $("#button").trigger("click");
+
+            if($("#ioerror").css("display") == "none"){
+
+                $("#button").trigger("click");
+
+            }
+
         }
+
+    });
+    
+    // Clicking on the retry button after an I/O error
+    $("#ioerror button").on("click", function(){
+        
+        // Hidding the message
+        $("#ioerror").hide();
+        
+        // Trying again
+        $("#button").trigger("click");
+        
     });
     
     // Updating the informations
