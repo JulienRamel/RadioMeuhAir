@@ -41,6 +41,7 @@ body{
     top: 122px;
     display: block;
     outline: none;
+    cursor: pointer;
 }
 
 #button.play{
@@ -198,6 +199,7 @@ body{
     position: absolute;
     outline: none;
     border: 0px;
+    cursor: pointer;
 }
 
 #infos{
@@ -206,6 +208,7 @@ body{
     top: 40px;
     right: 40px;
     position: absolute;
+    cursor: pointer;
 }
 
 #container2{
@@ -229,6 +232,7 @@ body{
     top: 40px;
     right: 40px;
     position: absolute;
+    cursor: pointer;
 }
 
 .text{
@@ -266,4 +270,13 @@ body{
     font-size: 14px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+#ioerror .longnames{
+    background-color: #0d3e4e;
+    right: -300px;
+    top: 0px;
+    width: 300px;
+    height: 105px;
+    position: absolute;
 }
