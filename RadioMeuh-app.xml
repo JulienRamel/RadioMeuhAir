@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <application xmlns="http://ns.adobe.com/air/application/2.7"> 
     <id>fr.woodgate.RadioMeuhAir</id> 
-    <versionNumber>1.0</versionNumber> 
+    <versionNumber>1.1</versionNumber> 
     <filename>RadioMeuh Air</filename> 
     <initialWindow> 
         <content>RadioMeuh.html</content> 
